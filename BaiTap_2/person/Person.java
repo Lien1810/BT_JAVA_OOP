@@ -2,11 +2,11 @@ package BaiTap_2.person;
 
 public class Person {
     // gọi là thuộc tính
-    String name;
-    int age;
-    String gender;
-    String adress;
-    String phone;
+    private String name;
+    private int age;
+    private String gender;
+    private String adress;
+    private String phone;
 
     // hàm tạo
     public Person(String name, int age, String gender, String adress, String phone) { //Ham xay dung co tham so
@@ -26,15 +26,23 @@ public class Person {
         return age;
     }
 
-    public String getPhone() {
+    protected String getPhone() {
         return phone;
     }
 
-    public String getAdress() {
+    protected String getAdress() {
         return adress;
     }
 
     public String getGender() {
         return gender;
+    }
+
+    protected void getInfo(){
+        System.out.println(getName());
+        System.out.println(getAge());
+        System.out.println(getGender());
+        System.out.println(getAdress());
+        System.out.println(getPhone());
     }
 }

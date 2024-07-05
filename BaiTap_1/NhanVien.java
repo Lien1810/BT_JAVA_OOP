@@ -9,9 +9,9 @@ package BaiTap_1;
 
 */
 public class NhanVien {
-    String name;
-    int age;
-    String position;
+   private String name;
+   private int age;
+   private String position;
 
     // Ham xay dung co tham so
     public NhanVien(String name, int age, String position) {
@@ -34,8 +34,8 @@ public class NhanVien {
     }
     // Phương thức để hiển thị thông tin nhân viên
     public void hienThiThongTin() {
-        System.out.println("Ten nhan vien: " + name);
-        System.out.println("Tuoi: " + age);
-        System.out.println("Chuc vu: " + position);
+        System.out.println("Ten nhan vien: " + getName());
+        System.out.println("Tuoi: " + getAge());
+        System.out.println("Chuc vu: " + getPosition());
     }
 }
